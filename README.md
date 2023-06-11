@@ -1,4 +1,4 @@
-# Bottle Filling with Water
+# Bottle Filling Plant
 
 ## Purpose of the system 
 The purpose of the modeled system is to represent a simple water bottling station for drinking water. The model must include components that allow handling water from the source to the moment of filling the bottle.
