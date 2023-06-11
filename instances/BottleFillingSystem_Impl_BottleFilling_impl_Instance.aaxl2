@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="BottleFilling_impl_Instance" category="system">
+  <componentInstance name="user_interface">
+    <featureInstance name="command_output" category="eventDataPort" direction="out">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedEventDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedAbstractSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.UserInterface.impl"/>
+  </componentInstance>
+  <componentInstance name="water_source" category="device">
+    <featureInstance name="water_output" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedDeviceSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:DeviceImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.WaterSourceImpl.impl"/>
+  </componentInstance>
+  <componentInstance name="bottle_sensor" category="device">
+    <featureInstance name="sensor_output" category="eventDataPort" direction="out">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedEventDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedDeviceSubcomponent.1"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:DeviceImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.BottleSensor.impl"/>
+  </componentInstance>
+  <componentInstance name="control_system" category="process">
+    <featureInstance name="flow_reading">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="ui_commands" category="eventDataPort">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedEventDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="sensor_input" category="eventDataPort">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedEventDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="pump_commands" category="eventDataPort" direction="out">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedEventDataPort.2"/>
+    </featureInstance>
+    <featureInstance name="valve_commands" category="eventDataPort" direction="out">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedEventDataPort.3"/>
+    </featureInstance>
+    <featureInstance name="conveyor_commands" category="eventDataPort" direction="out">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedEventDataPort.4"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedProcessSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:ProcessImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.ControlSystemImpl.impl"/>
+  </componentInstance>
+  <componentInstance name="water_pump" category="system">
+    <featureInstance name="water_input">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="water_output" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="pump_commands" category="eventDataPort">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedSystemSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.WaterPumpImpl.impl"/>
+  </componentInstance>
+  <componentInstance name="supply_pipe" category="system">
+    <featureInstance name="input">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="output" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedSystemSubcomponent.1"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.SupplyPipeImpl.impl"/>
+  </componentInstance>
+  <componentInstance name="flow_meter" category="system">
+    <featureInstance name="water_in">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="water_out" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="flow_reading" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.2"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedSystemSubcomponent.2"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.FlowMeterImpl.impl"/>
+  </componentInstance>
+  <componentInstance name="filter" category="system">
+    <featureInstance name="unfiltered_in">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="filtered_out" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDataPort.1"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedSystemSubcomponent.3"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.FilterImpl.impl"/>
+  </componentInstance>
+  <componentInstance name="filling_valve" category="system">
+    <featureInstance name="input">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="bottle_fill" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="open_valve" category="eventDataPort">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedEventDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedSystemSubcomponent.4"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.FillingValveImpl.impl"/>
+  </componentInstance>
+  <componentInstance name="bottle_conveyor" category="system">
+    <featureInstance name="conveyor_input" category="eventDataPort">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedEventDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="conveyor_output" category="eventDataPort" direction="out">
+      <feature xsi:type="aadl2:EventDataPort" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedEventDataPort.1"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedSystemSubcomponent.5"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.BottleConveyorImpl.impl"/>
+  </componentInstance>
+  <connectionInstance name="user_interface.command_output -> control_system.ui_commands" complete="true" kind="portConnection" destination="//@componentInstance.3/@featureInstance.1" source="//@componentInstance.0/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.0/@featureInstance.0" destination="//@componentInstance.3/@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.10"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="water_source.water_output -> water_pump.water_input" complete="true" kind="portConnection" destination="//@componentInstance.4/@featureInstance.0" source="//@componentInstance.1/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.1/@featureInstance.0" destination="//@componentInstance.4/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="bottle_sensor.sensor_output -> control_system.sensor_input" complete="true" kind="portConnection" destination="//@componentInstance.3/@featureInstance.2" source="//@componentInstance.2/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.2/@featureInstance.0" destination="//@componentInstance.3/@featureInstance.2">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.6"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="control_system.pump_commands -> water_pump.pump_commands" complete="true" kind="portConnection" destination="//@componentInstance.4/@featureInstance.2" source="//@componentInstance.3/@featureInstance.3">
+    <connectionReference context="/" source="//@componentInstance.3/@featureInstance.3" destination="//@componentInstance.4/@featureInstance.2">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.7"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="control_system.valve_commands -> filling_valve.open_valve" complete="true" kind="portConnection" destination="//@componentInstance.8/@featureInstance.2" source="//@componentInstance.3/@featureInstance.4">
+    <connectionReference context="/" source="//@componentInstance.3/@featureInstance.4" destination="//@componentInstance.8/@featureInstance.2">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="control_system.conveyor_commands -> bottle_conveyor.conveyor_input" complete="true" kind="portConnection" destination="//@componentInstance.9/@featureInstance.0" source="//@componentInstance.3/@featureInstance.5">
+    <connectionReference context="/" source="//@componentInstance.3/@featureInstance.5" destination="//@componentInstance.9/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.9"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="water_pump.water_output -> supply_pipe.input" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.0" source="//@componentInstance.4/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.4/@featureInstance.1" destination="//@componentInstance.5/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="supply_pipe.output -> flow_meter.water_in" complete="true" kind="portConnection" destination="//@componentInstance.6/@featureInstance.0" source="//@componentInstance.5/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.5/@featureInstance.1" destination="//@componentInstance.6/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="flow_meter.water_out -> filter.unfiltered_in" complete="true" kind="portConnection" destination="//@componentInstance.7/@featureInstance.0" source="//@componentInstance.6/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.6/@featureInstance.1" destination="//@componentInstance.7/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="flow_meter.flow_reading -> control_system.flow_reading" complete="true" kind="portConnection" destination="//@componentInstance.3/@featureInstance.0" source="//@componentInstance.6/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.6/@featureInstance.2" destination="//@componentInstance.3/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="filter.filtered_out -> filling_valve.input" complete="true" kind="portConnection" destination="//@componentInstance.8/@featureInstance.0" source="//@componentInstance.7/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.7/@featureInstance.1" destination="//@componentInstance.8/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../BottleFillingSystem_Impl.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPortConnection.5"/>
+    </connectionReference>
+  </connectionInstance>
+  <classifier xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.BottleFilling.impl"/>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:SystemImplementation" href="../BottleFillingSystem_Impl.aadl#BottleFillingSystem_Impl.BottleFilling.impl"/>
+</instance:SystemInstance>

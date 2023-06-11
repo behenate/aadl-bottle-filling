@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="41752532-29b8-4c30-bf09-4b0853b7965b" manual="true">
+    <element uuid="2b6f82ca-d645-42fa-8534-b1008e45d0b3" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>BottleConveyor</seg>
+      </bo>
+      <position x="289.2291717529297" y="368.0"/>
+      <size width="143.15885162353516" height="35.0"/>
+    </element>
+    <element uuid="b4e2bb0b-238e-4c04-b010-7bad9d8ecc4f" manual="true">
+      <element uuid="04ed4246-5e57-435c-bc18-78455f61610c" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="273.22918701171875" y="385.5"/>
+          <point x="285.22918701171875" y="385.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>BottleConveyor.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="368.0"/>
+      <size width="171.30990600585938" height="35.0"/>
+    </element>
+    <element uuid="da404d16-7d62-4d0e-abcf-c4cd668491cb" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>BottleFillingSystem</seg>
+      </bo>
+      <position x="311.44268798828125" y="478.0"/>
+      <size width="165.3723907470703" height="35.0"/>
+    </element>
+    <element uuid="bee80b9d-11a0-4416-9445-46a4e24c618e" manual="true">
+      <element uuid="e858ea9e-4337-4607-9019-8d7c367ed175" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="295.44268798828125" y="495.5"/>
+          <point x="307.44268798828125" y="495.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>BottleFillingSystem.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="478.0"/>
+      <size width="193.52342224121094" height="35.0"/>
+    </element>
+    <element uuid="043d96de-467e-444b-a450-d12aea19f81d" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>BottleSensor</seg>
+      </bo>
+      <position x="274.4114532470703" y="203.0"/>
+      <size width="128.3411407470703" height="35.0"/>
+    </element>
+    <element uuid="5ed7eacd-0679-430f-b932-3b6f0e58f9ff" manual="true">
+      <element uuid="41ec1344-d0de-4054-9bee-60daa24b2bcf" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="258.4114685058594" y="220.5"/>
+          <point x="270.41143798828125" y="220.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>BottleSensor.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="203.0"/>
+      <size width="156.49219512939453" height="35.0"/>
+    </element>
+    <element uuid="8127f647-d9e8-4db1-9f0e-061c4ae7f4d0" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>ControlSystem</seg>
+      </bo>
+      <position x="285.5052185058594" y="313.0"/>
+      <size width="139.43489837646484" height="35.0"/>
+    </element>
+    <element uuid="12fc0f82-24f3-428c-a36f-ff2b96646f22" manual="true">
+      <element uuid="2a22a127-c77d-478d-9fe3-65a23a9880de" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="269.5052185058594" y="330.5"/>
+          <point x="281.5052185058594" y="330.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>ControlSystem.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="313.0"/>
+      <size width="167.58595275878906" height="35.0"/>
+    </element>
+    <element uuid="6e6d3596-46f8-40d1-88ae-50b1b9b153df" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>FillingValve</seg>
+      </bo>
+      <position x="266.2473907470703" y="148.0"/>
+      <size width="120.17707824707031" height="35.0"/>
+    </element>
+    <element uuid="7d2c4726-2532-4de2-829d-ad669a47228a" manual="true">
+      <element uuid="76b36ce4-2128-42b3-9279-dd598332b3a6" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="250.24740600585938" y="165.5"/>
+          <point x="262.24737548828125" y="165.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>FillingValve.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="148.0"/>
+      <size width="148.32813262939453" height="35.0"/>
+    </element>
+    <element uuid="bcb8aeeb-535c-4b23-9cb8-3df205e30c12" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>Filter</seg>
+      </bo>
+      <position x="227.69920349121094" y="38.0"/>
+      <size width="81.62890434265137" height="35.0"/>
+    </element>
+    <element uuid="b5d27636-56b6-42d9-89aa-2d6ce081d432" manual="true">
+      <element uuid="64bdf9ae-8f3b-41ff-9165-71748b9414c3" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="211.69920349121094" y="55.5"/>
+          <point x="223.69920349121094" y="55.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>Filter.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="38.0"/>
+      <size width="109.77994155883789" height="35.0"/>
+    </element>
+    <element uuid="c6db0761-24e1-4313-84e7-16a42bb025a4" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>OperatorInterface</seg>
+      </bo>
+      <position x="302.5690002441406" y="423.0"/>
+      <size width="156.49869537353516" height="35.0"/>
+    </element>
+    <element uuid="8412d569-6c09-4d08-8c8b-c1097fcdf6d2" manual="true">
+      <element uuid="a69d58d3-a3b9-43fa-a4b1-dd0380559f3e" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="286.5690002441406" y="440.5"/>
+          <point x="298.5690002441406" y="440.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>OperatorInterface.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="423.0"/>
+      <size width="184.6497344970703" height="35.0"/>
+    </element>
+    <element uuid="8ba4fce5-bd67-4f46-abf6-bd90ad598517" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>QualitySensor</seg>
+      </bo>
+      <position x="281.8137969970703" y="258.0"/>
+      <size width="135.7434844970703" height="35.0"/>
+    </element>
+    <element uuid="b2665d55-8c0f-4b66-b107-a9a03d5778fa" manual="true">
+      <element uuid="4a555949-b8e2-4d75-8c92-b6e50444c04a" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="265.8138122558594" y="275.5"/>
+          <point x="277.81378173828125" y="275.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>QualitySensor.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="258.0"/>
+      <size width="163.89453887939453" height="35.0"/>
+    </element>
+    <element uuid="aec879a2-80a3-464e-be41-2bc629a787bb" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>WaterPipe</seg>
+      </bo>
+      <position x="260.31640625" y="93.0"/>
+      <size width="114.24608993530273" height="35.0"/>
+    </element>
+    <element uuid="a27dbf3f-194d-4bce-ab92-e87351528aff" manual="true">
+      <element uuid="bd98e9db-36d6-4d1b-ab7f-626b30f27a30" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="244.31640625" y="110.5"/>
+          <point x="256.31640625" y="110.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>WaterPipe.impl</seg>
+      </bo>
+      <position x="97.91926574707031" y="93.0"/>
+      <size width="142.3971405029297" height="35.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>BottleFilling</seg>
+    </bo>
+    <position/>
+    <size width="488.81507873535156" height="525.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>BottleFilling</seg>
+    </context>
+  </config>
+</diagram:Diagram>

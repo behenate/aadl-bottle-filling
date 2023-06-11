@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="e3b09ec6-3d65-49bf-b402-77bc9352d925" manual="true">
+    <element uuid="1587b9d5-3348-4fab-b09a-bd4a753682d0" manual="true">
+      <element uuid="ad8bea24-7ea2-474d-ba4c-cb93663048bb" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>control_thread_conn</seg>
+      </bo>
+      <bendpoints>
+        <point x="-24.0" y="297.0"/>
+        <point x="-25.0" y="393.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="4ea0f59a-b556-4cc9-b5b9-1d3199e91097" manual="true">
+      <element uuid="834146dd-025c-4954-aead-3196195f1015" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>control_thread_conn_1</seg>
+      </bo>
+      <bendpoints>
+        <point x="-1.0" y="525.0"/>
+        <point x="-1.0" y="490.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="02f99b76-4a2e-4bde-afca-feed67fe289d" manual="true">
+      <element uuid="12756b85-46bc-4e0e-a633-8fdcd8bd95d4" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>control_thread_conn_2</seg>
+      </bo>
+    </element>
+    <element uuid="420d3cd3-411d-4e64-a8fb-ac858f706a39" manual="true">
+      <element uuid="db8654bd-baff-4a1a-8e4e-2e9f66753361" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conveyor_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="e6ad89ac-9820-430e-930c-c442f2a9ef2c" manual="true">
+      <element uuid="19f6f790-a566-45d3-a0b6-8449aa52a707" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conveyor_thread_conn_1</seg>
+      </bo>
+    </element>
+    <element uuid="a55129fd-60fd-44b8-b571-47bb74d5ef81" manual="true">
+      <element uuid="896dde12-2b69-43a2-883b-c730b4696256" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conveyor_thread_conn_2</seg>
+      </bo>
+    </element>
+    <element uuid="d312a530-a726-4126-a815-909f8362271d" manual="true">
+      <element uuid="6b0d3b3e-450f-4313-8029-c0df3400a60d" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>filling_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="772b7e06-414e-42f7-9663-c74c37cdd2fa" manual="true">
+      <element uuid="2bdbb88c-3a42-40a8-aa35-b0845f52669b" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>filling_thread_conn_1</seg>
+      </bo>
+      <bendpoints>
+        <point x="-405.1796875" y="241.0"/>
+        <point x="-405.1796875" y="294.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="9875ff04-026d-4d27-bdda-7dfa9ec7df9f" manual="true">
+      <element uuid="6789b511-4a16-476a-8a7f-50bf4506025d" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>filling_thread_conn_2</seg>
+      </bo>
+      <bendpoints>
+        <point x="-395.1796875" y="191.0"/>
+        <point x="-395.1796875" y="244.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="f523bc10-5968-4870-a9fe-ab1ec300634a" manual="true">
+      <element uuid="17a79d9c-8529-4bc2-aa40-d8f92ffcb60c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>operator_input_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="c3dbdca5-9c8c-4f80-a572-54b4148c1c5b" manual="true">
+      <element uuid="80307e49-9546-45e5-8838-c2df040f3b3c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>water_input_conveyor_conn</seg>
+      </bo>
+    </element>
+    <element uuid="715c7e7e-607c-44c2-9316-28da7eafcf87" manual="true">
+      <element uuid="1454e30c-055b-4e39-8b08-b942b7fd8e7c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>water_input_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="792d4455-177e-4a65-a3c2-153b08faffcd" manual="true">
+      <element uuid="f6f12df1-2dd8-476d-88fb-fe97b5032990" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>water_input_thread_conn_1</seg>
+      </bo>
+    </element>
+    <element uuid="bcd0f085-a534-4717-8ac1-cab8839ebe8e" manual="true">
+      <element uuid="2008c834-878c-4f6c-9788-1cd1397967a8" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>water_input_thread_conn_2</seg>
+      </bo>
+    </element>
+    <element uuid="bacb1e07-7069-43ba-b4a9-7a7cd1f2c512" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>bottle_full</seg>
+      </bo>
+      <position y="59.0"/>
+    </element>
+    <element uuid="7e437e46-5126-4187-bdb1-2e00c0c4acf8" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>bottle_in_place</seg>
+      </bo>
+      <position y="109.0"/>
+    </element>
+    <element uuid="38731816-6b01-4002-850c-6edce56328c6" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>change_filter_in</seg>
+      </bo>
+      <position y="262.0"/>
+    </element>
+    <element uuid="60205e7e-e93e-4070-a0d3-267f5cf7783f" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>control_commands</seg>
+      </bo>
+      <position y="312.0"/>
+    </element>
+    <element uuid="2e14ba0c-81d3-43fe-ae80-a02610462cea" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>conveyor_on</seg>
+      </bo>
+      <position x="1011.65234375" y="278.6666666666667"/>
+    </element>
+    <element uuid="250b207b-a0fc-41e2-8aa5-dd50f88cd55d" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>current_conveyor_speed</seg>
+      </bo>
+      <position y="417.0"/>
+    </element>
+    <element uuid="51b3ef5d-bd80-4e6c-8f1d-7dde58f62cc4" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>set_conveyor_speed</seg>
+      </bo>
+      <position x="964.9531173706055" y="442.0"/>
+    </element>
+    <element uuid="7ad938f6-50f8-4197-b662-79b9f9a4062f" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>valve_operate</seg>
+      </bo>
+      <position x="1004.2369766235352" y="345.33333333333337"/>
+    </element>
+    <element uuid="d57495cb-2291-4df4-98a5-adc4041e7b5b" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>water_flow</seg>
+      </bo>
+      <position y="162.0"/>
+    </element>
+    <element uuid="94508ab8-eec1-47a0-941a-1416e983da45" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>water_quality</seg>
+      </bo>
+      <position y="212.0"/>
+    </element>
+    <element uuid="4b9ebf53-7a95-46a0-920e-5a0756f0f647" manual="true">
+      <bo>
+        <seg>realization</seg>
+      </bo>
+    </element>
+    <element uuid="fd54b762-f5a4-4ced-9e74-fb95be124566" manual="true">
+      <element uuid="7cb0dbff-61fa-46bc-bccc-b8e8c7080ed5" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>control_commands_in</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="2cd6e74d-553a-4be5-adff-8114a135a768" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>conveyor_in</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="322e40f9-7e9c-43cf-bbf3-f316d667809f" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>conveyor_out</seg>
+        </bo>
+        <position x="142.4362030029297" y="26.666666666666668"/>
+      </element>
+      <element uuid="b0aeec9f-7d5f-48f4-810e-6e76b8ad160e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>valve_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="a8d06c86-f97a-4ab0-a57c-4e0feb85002e" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>valve_out</seg>
+        </bo>
+        <position x="165.41147232055664" y="93.33333333333334"/>
+      </element>
+      <element uuid="351576d1-f693-4fd6-8691-7744efbda93a" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>sc_type</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>control_thread</seg>
+      </bo>
+      <position x="760.0" y="250.0"/>
+      <size width="234.48828887939453" height="160.0"/>
+    </element>
+    <element uuid="14742c33-ad3c-44cd-a4e7-be074436eded" manual="true">
+      <element uuid="39738621-e973-4e4d-b679-c45b652206a0" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>conveyor_on_out</seg>
+        </bo>
+        <position x="240.8815155029297" y="10.0"/>
+      </element>
+      <element uuid="10863fc0-f0b8-4c56-81fc-9ca0f5b9b05e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>current_conveyor_speed_in</seg>
+        </bo>
+        <position y="35.0"/>
+      </element>
+      <element uuid="32d5ac9e-533d-4455-b70d-7f6ce10e4977" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>set_conveyor_speed_out</seg>
+        </bo>
+        <position x="194.18231201171875" y="60.0"/>
+      </element>
+      <element uuid="46f3d048-5543-4ea1-8647-dd7e7c9d1a0a" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>sc_type</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>conveyor_thread</seg>
+      </bo>
+      <position x="354.82029724121094" y="382.0"/>
+      <size width="355.17970275878906" height="110.0"/>
+    </element>
+    <element uuid="59afdf1f-3517-426a-b4d8-01fc4c49b430" manual="true">
+      <element uuid="f204e80b-6ce7-4f94-9cfc-f38c24d9b1fd" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>bottle_full_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="f21914c7-c815-461a-aba7-cf97cddd122f" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>bottle_in_place_in</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="b8401b17-b19d-4fee-b63a-bd77036c747e" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>valve_out</seg>
+        </bo>
+        <position x="212.0143642425537" y="60.0"/>
+      </element>
+      <element uuid="5e85c3b3-3c19-4906-aff3-2618d5d08e2b" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>water_info_in</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="baef35bb-3fe5-41fd-a9f0-9c75471cf690" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>sc_type</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>filling_thread</seg>
+      </bo>
+      <position x="388.9088191986084" y="102.0"/>
+      <size width="281.0911808013916" height="160.0"/>
+    </element>
+    <element uuid="92b0a4db-74b7-476f-8e66-3046a757bf8b" manual="true">
+      <element uuid="3fe324f8-9578-4a25-b1af-7d578f5e7906" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>control_commands_in</seg>
+        </bo>
+        <position y="42.0"/>
+      </element>
+      <element uuid="d5895e07-9aea-4118-8d12-92ca9235c191" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>control_commands_out</seg>
+        </bo>
+        <position x="159.40625" y="42.0"/>
+      </element>
+      <element uuid="444a9c3f-6b8c-4c14-b6c0-03fc55f81751" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>sc_type</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>operator_input_thread</seg>
+      </bo>
+      <position x="400.0" y="270.0"/>
+      <size width="310.0" height="92.0"/>
+    </element>
+    <element uuid="f4e1b2e5-7528-4627-ab08-e87d186e7a9d" manual="true">
+      <element uuid="1480d638-79f4-4b28-91d5-a6d6d7504f20" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>filter_in</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="ea37a63f-2e69-4bb3-b4c0-6f1d995c6730" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>quality_in</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="02a7ad8e-b8f6-4f2a-8afb-cf363b4a12e7" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>water_flow_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="e69c0613-3bcb-49e4-8763-56767383ab8c" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>water_info_out</seg>
+        </bo>
+        <position x="93.5234375" y="60.0"/>
+      </element>
+      <element uuid="44ec880e-0dbd-4b96-9d90-54c639834ca3" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>sc_type</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>water_input_thread</seg>
+      </bo>
+      <position x="131.8293914794922" y="152.0"/>
+      <size width="192.9908905029297" height="160.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>ControlSystem.impl</seg>
+    </bo>
+    <position x="-740.0" y="100.0"/>
+    <size width="1100.0" height="504.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>BottleFilling::ControlSystem.impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>
