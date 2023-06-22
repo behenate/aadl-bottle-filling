@@ -60,6 +60,7 @@ public
 			operator_interface: abstract OperatorInterface;
 			main_bus: bus MainBus.impl;
 			main_processor: processor MainProcessor.impl;
+			main_ram: memory Ram.impl;
 
 		connections
 			conn1: port water_pipe.water_flow -> control_system.water_flow;
@@ -80,6 +81,33 @@ public
 			bottle_sensor_bus: bus access main_bus -> bottle_sensor.bus_access;
 			bottle_conveyor_bus: bus access main_bus -> bottle_conveyor.bus_access;
 			bus_processor: bus access main_bus -> main_processor.bus_access;
+			bus_ram: bus access main_bus <-> main_ram.bus_access;
+		properties
+			Actual_Memory_Binding => (reference (main_ram)) applies to water_pipe;
+			Actual_Memory_Binding => (reference (main_ram)) applies to quality_sensor;
+			Actual_Memory_Binding => (reference (main_ram)) applies to bottle_sensor;
+			Actual_Memory_Binding => (reference (main_ram)) applies to bottle_conveyor;
+			Actual_Memory_Binding => (reference (main_ram)) applies to operator_interface;
+			Actual_Memory_Binding => (reference (main_ram)) applies to main_processor;
+			
+			
+			Actual_Processor_Binding => (reference (main_processor)) applies to water_pipe;
+			Actual_Processor_Binding => (reference (main_processor)) applies to quality_sensor;
+			Actual_Processor_Binding => (reference (main_processor)) applies to bottle_sensor;
+			Actual_Processor_Binding => (reference (main_processor)) applies to bottle_conveyor;
+			Actual_Processor_Binding => (reference (main_processor)) applies to operator_interface;
+			
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn1;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn2;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn3;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn4;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn5;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn6;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn7;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn8;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn9;
+			Actual_Connection_Binding => (reference (main_bus)) applies to conn10;
+			
 
 	end BottleFillingSystem.impl;
 
@@ -95,6 +123,8 @@ public
 	end MainProcessor.impl;
 
 	memory Ram
+		features
+			bus_access: requires bus access MainBus;
 	end Ram;
 
 	bus MainBus
@@ -223,6 +253,8 @@ public
 		features
 			water_flow: out data port WaterFlow.LitersPerSecond;
 			bus_access: requires bus access MainBus;
+		properties
+			SEI::GrossWeight => 200.0kg;
 	end WaterPipe;
 
 	device implementation WaterPipe.impl
@@ -232,6 +264,8 @@ public
 		features
 			filter_needs_changing: out event port;
 			bus_access: requires bus access MainBus;
+		properties
+			SEI::GrossWeight => 20.0kg;
 	end Filter;
 
 	device implementation Filter.impl
@@ -241,6 +275,8 @@ public
 		features
 			water_quality: out data port WaterQuality.ParticlesPerCm3;
 			bus_access: requires bus access MainBus;
+		properties
+			SEI::GrossWeight => 0.3kg;
 	end QualitySensor;
 
 	device implementation QualitySensor.impl
@@ -250,6 +286,8 @@ public
 		features
 			valve_operate: in event port;
 			bus_access: requires bus access MainBus;
+		properties
+			SEI::GrossWeight => 10.0kg;
 	end FillingValve;
 
 	device implementation FillingValve.impl
@@ -260,6 +298,8 @@ public
 			bottle_in_place: out event port;
 			bottle_full: out event port;
 			bus_access: requires bus access MainBus;
+		properties
+			SEI::GrossWeight => 1.0kg;
 	end BottleSensor;
 
 	device implementation BottleSensor.impl
@@ -271,6 +311,8 @@ public
 			conveyor_speed: out data port Speed.mps;
 			bus_access: requires bus access MainBus;
 			start_stop_conveyor: in event port;
+		properties
+			SEI::GrossWeight => 800.0kg;
 	end BottleConveyor;
 
 	device implementation BottleConveyor.impl
